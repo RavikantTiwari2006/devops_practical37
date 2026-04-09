@@ -1,12 +1,10 @@
-from flask import Flask                     
-app = Flask(__name__)
+username = input("Enter username: ")
+password = input("Enter password: ")
 
-@app.route('/')
-def home():
-    return "Hello DevOps! Practical Running Successfully "
-
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000)
+if username == "admin" and password == "1234":
+    print("Login Successful")
+else:
+    print("Invalid Credentials")
     
     
     
